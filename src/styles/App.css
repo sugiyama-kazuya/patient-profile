@@ -1,0 +1,256 @@
+html,
+body {
+  height: 100%;
+  font-family: "Comfortaa", cursive, "Noto Sans", sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8c4cf;
+  color: #fff;
+}
+
+/* header */
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  margin-right: 5px;
+}
+
+.icon {
+  font-size: 12px;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.name {
+  display: flex;
+}
+
+/* content */
+.content-wrapper {
+  padding: 0 4px 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.upper-wrapper {
+  display: flex;
+}
+
+.img-wrapper {
+  width: 30%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.content-1 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-right: 6px;
+}
+
+.content-1__card {
+  color: #cf788b;
+  width: 50%;
+  background-color: #fff;
+  display: flex;
+  padding: 4px;
+  width: 100%;
+  height: calc(100% / 3);
+}
+
+.content-1__card:not(:first-of-type) {
+  margin-top: 4px;
+}
+
+.card {
+  background-color: #fff;
+  color: #cf788b;
+  margin-top: 4px;
+  padding: 4px 4px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.tag {
+  display: block;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  position: relative;
+}
+
+.tag-side {
+  font-size: 10px;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+  position: relative;
+  word-break: break-all;
+}
+
+.changed-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+}
+
+.w-80 {
+  width: 98%;
+}
+
+.p-tb {
+  padding: 5px 0;
+}
+
+.select {
+  padding: 10px 10px 20px;
+}
+
+.select-button__wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.return-btn-wrapper {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.birthday-wrapper {
+  padding: 20px;
+}
+
+.upload-img__wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.upload-img {
+  width: 80%;
+  height: auto;
+}
+
+.profile-content {
+  padding: 10px 10px 20px;
+  box-sizing: border-box;
+}
+
+.profile-input {
+  display: none;
+}
+.profile-input__label {
+  background-color: #f50357;
+  color: #fff;
+  padding: 8px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 12px;
+  width: 60%;
+  text-align: center;
+}
+
+.profile-input__wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.preview-img__box {
+  padding: 10px 30px;
+}
+
+.display-none {
+  display: none;
+}
+
+.download-btn__wrapper {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.loading-wrapper {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.change-icon-position {
+  position: absolute;
+  bottom: -10px;
+}
