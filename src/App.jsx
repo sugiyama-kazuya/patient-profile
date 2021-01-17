@@ -1,4 +1,4 @@
-import React, { useReducer, useRef, useEffect, useState } from "react";
+import React, { useReducer, useRef } from "react";
 import "./styles/App.css";
 import {
   Header,
@@ -28,6 +28,14 @@ const App = () => {
 
     dispatch({ type: Actions.SAVE_PREVIEW, imageurl });
   };
+
+  const setFillHeight = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  };
+
+  window.addEventListener("resize", setFillHeight);
+  setFillHeight();
 
   return (
     <AppContext.Provider value={{ state, dispatch }}>

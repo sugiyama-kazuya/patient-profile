@@ -13,13 +13,13 @@ const Card = ({ tag, item, changeIconBtn = false }) => {
   const icon = (function () {
     switch (item) {
       case Constans.NAME:
-        return <img src={Name} className="icon" />;
+        return <img src={Name} className="icon" alt="アイコン画像" />;
       case Constans.SEX:
-        return <img src={Sex} className="icon" />;
+        return <img src={Sex} className="icon" alt="アイコン画像" />;
       case Constans.BIRTHDAY:
-        return <img src={Birthday} className="icon" />;
+        return <img src={Birthday} className="icon" alt="アイコン画像" />;
       default:
-        return <img src={Name} className="icon" />;
+        return <img src={Name} className="icon" alt="アイコン画像" />;
     }
   })();
 
