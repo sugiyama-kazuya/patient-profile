@@ -198,6 +198,7 @@ h1 {
 .upload-img {
   width: 80%;
   height: auto;
+  object-fit: cover;
 }
 
 .profile-content {
