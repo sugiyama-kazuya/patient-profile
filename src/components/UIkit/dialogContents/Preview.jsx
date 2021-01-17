@@ -13,19 +13,17 @@ const Preview = () => {
   };
   return (
     <div className="preview-img__box">
-      <figure>
-        {state.previewData ? (
-          <img
-            className="preview-img"
-            src={state.previewData}
-            alt="画面キャプチャ"
-          />
-        ) : (
-          <div className="loading-wrapper">
-            <CircularProgress color="secondary" />
-          </div>
-        )}
-      </figure>
+      {state.previewData ? (
+        <img
+          className="preview-img"
+          src={state.previewData}
+          alt="画面キャプチャ"
+        />
+      ) : (
+        <div className="loading-wrapper">
+          <CircularProgress color="secondary" />
+        </div>
+      )}
       <div className="download-btn__wrapper">
         <DefaultButton name={"画像を保存する"} onClick={download} show={true} />
       </div>
