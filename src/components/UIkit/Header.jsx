@@ -24,12 +24,12 @@ const Header = ({ savePreview }) => {
         <h1>
           <img
             src={HeaderLogo}
-            width="23px"
-            height="23px"
+            width="25px"
+            height="25px"
             className="header-icon"
             alt="ヘッダーのロゴ"
           />
-          Patient Card
+          かんじゃカード
         </h1>
         <DefaultButton
           name={"preview"}
