@@ -29,7 +29,7 @@ const Header = ({ savePreview }) => {
             className="header-icon"
             alt="ヘッダーのロゴ"
           />
-          かんじゃカード
+          Patient Card
         </h1>
         <DefaultButton
           name={"preview"}
