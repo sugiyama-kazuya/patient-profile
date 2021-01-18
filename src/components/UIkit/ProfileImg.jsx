@@ -4,14 +4,21 @@ import * as Constans from "../../constans";
 import AppContext from "../../contexts/AppContext";
 import * as Actions from "../../actions/index";
 
-const ProfileImg = ({ changeIconBtn = false }) => {
+const ProfileImg = () => {
   const { state, dispatch } = useContext(AppContext);
+  const isPreview = state.isPreview;
 
   return (
     <div className="img-wrapper">
-      <img className="profile-img" src={state.profileImg} alt="" />
+      <figure className="profile-img-wrapper">
+        <img
+          className="profile-img"
+          src={state.profileImg}
+          alt="プロフィール画像"
+        />
+      </figure>
       <CameraAltIcon
-        className={`image-icon ${changeIconBtn ? "diplay-none" : false}`}
+        className={`image-icon ${isPreview && "display-none"}`}
         onClick={() =>
           dispatch({ type: Actions.DIALOG_OPEN, item: Constans.PROFILE_IMG })
         }

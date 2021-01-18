@@ -20,11 +20,9 @@ const App = () => {
 
   const savePreview = async () => {
     let imageurl;
-    await html2canvas(previewData.current, { allowTaint: false }).then(
-      (canvas) => {
-        imageurl = canvas.toDataURL("image/jpeg");
-      }
-    );
+    await html2canvas(previewData.current).then((canvas) => {
+      imageurl = canvas.toDataURL("image/jpeg");
+    });
 
     dispatch({ type: Actions.SAVE_PREVIEW, imageurl });
   };

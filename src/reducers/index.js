@@ -4,13 +4,13 @@ const eventReducer = (state, action) => {
   switch (action.type) {
     case Actions.DIALOG_OPEN:
       return { ...state, dialog: { isOpen: true, content: action.item } };
-    case Actions.HEADER_BTN_HIDE:
-      return { ...state, isPreviewBtn: false };
+    case Actions.HIDE_ELEMENTS_OPENING_PREVIEW:
+      return { ...state, isPreview: true };
     case Actions.DIALOG_CLOSE:
       return {
         ...state,
         dialog: { isOpen: false, content: "" },
-        isPreviewBtn: true,
+        isPreview: false,
       };
     case Actions.NAME_INPUT:
       return { ...state, name: action.name };
