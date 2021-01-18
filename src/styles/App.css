@@ -1,7 +1,8 @@
 html,
 body {
   height: calc(var(--vh, 1vh) * 100);
-  font-family: "Comfortaa", cursive, "Noto Sans", sans-serif;
+  font-family: "Comfortaa", "M PLUS Rounded 1c", cursive, "Noto Sans",
+    sans-serif;
 }
 
 #root {
