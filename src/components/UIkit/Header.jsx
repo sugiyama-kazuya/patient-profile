@@ -1,17 +1,19 @@
 import React, { useContext } from "react";
 import { DefaultButton } from "../index";
 import AppContext from "../../contexts/AppContext";
-import { DIALOG_OPEN, HEADER_BTN_HIDE } from "../../actions/index";
+import {
+  DIALOG_OPEN,
+  HIDE_ELEMENTS_OPENING_PREVIEW,
+} from "../../actions/index";
 import * as Constans from "../../constans";
 import HeaderLogo from "../../icons/header-logo.png";
 
 const Header = ({ savePreview }) => {
   const { state, dispatch } = useContext(AppContext);
   const dialogTarget = Constans.PREVIEW_IMG;
-  
 
   const dialogOpen = async () => {
-    await dispatch({ type: HEADER_BTN_HIDE });
+    await dispatch({ type: HIDE_ELEMENTS_OPENING_PREVIEW });
     savePreview();
     dispatch({ type: DIALOG_OPEN, item: dialogTarget });
   };
@@ -32,7 +34,7 @@ const Header = ({ savePreview }) => {
         <DefaultButton
           name={"preview"}
           onClick={dialogOpen}
-          show={state.isPreviewBtn}
+          show={state.isPreview ? false : true}
         />
       </div>
     </header>
