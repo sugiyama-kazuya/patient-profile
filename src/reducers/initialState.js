@@ -16,6 +16,7 @@ export const initialState = {
   connect: "",
   previewData: null,
   isPreview: false,
+  isFirstDialog: false,
 };
 
 export const moons = [

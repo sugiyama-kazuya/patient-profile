@@ -1,5 +1,7 @@
 export const DIALOG_OPEN = "DIALOG_OPEN";
 export const DIALOG_CLOSE = "DIALOG_CLOSE";
+export const FIRST_DIALOG_OPEN = "FIRST_DIALOG_OPEN";
+export const FIRST_DIALOG_CLOSE = "FIRST_DIALOG_CLOSE";
 export const NAME_INPUT = "NAME_INPUT";
 export const SEX_INPUT = "SEX_INPUT";
 export const BIRTHDAY_INPUT = "BIRTHDAY_INPUT";

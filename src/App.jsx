@@ -1,4 +1,4 @@
-import React, { useReducer, useRef } from "react";
+import React, { useReducer, useRef, useEffect } from "react";
 import "./styles/App.css";
 import {
   Header,
@@ -6,6 +6,7 @@ import {
   Card,
   LargeCard,
   DefaultDialog,
+  FirstDialog,
 } from "./components/index";
 import AppContext from "./contexts/AppContext";
 import reducer from "./reducers/index";
@@ -17,6 +18,10 @@ import * as Actions from "./actions/index";
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const previewData = useRef(null);
+
+  useEffect(() => {
+    dispatch({ type: Actions.FIRST_DIALOG_OPEN });
+  }, []);
 
   const savePreview = async () => {
     let imageurl;
@@ -39,6 +44,7 @@ const App = () => {
     <AppContext.Provider value={{ state, dispatch }}>
       <div className="App" ref={previewData}>
         <DefaultDialog />
+        <FirstDialog />
         <Header savePreview={savePreview} />
         <div className="content-wrapper">
           <div className="upper-wrapper">

@@ -12,6 +12,10 @@ const eventReducer = (state, action) => {
         dialog: { isOpen: false, content: "" },
         isPreview: false,
       };
+    case Actions.FIRST_DIALOG_OPEN:
+      return { ...state, isFirstDialog: true };
+    case Actions.FIRST_DIALOG_CLOSE:
+      return { ...state, isFirstDialog: false };
     case Actions.NAME_INPUT:
       return { ...state, name: action.name };
     case Actions.SEX_INPUT:
