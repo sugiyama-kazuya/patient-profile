@@ -20,3 +20,4 @@ export { default as TextInputTemplate } from "./UIkit/dialogContentTemplates/Tex
 export { default as SelectInput } from "./UIkit/forms/SelectInput";
 export { default as ProfileImgContent } from "./UIkit/dialogContents/ProfileImgContent";
 export { default as Preview } from "./UIkit/dialogContents/Preview";
+export { default as FirstDialog } from "./UIkit/FirstDialog";

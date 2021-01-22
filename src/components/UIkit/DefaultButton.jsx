@@ -3,11 +3,17 @@ import "../../styles/App.css";
 import Button from "@material-ui/core/Button";
 import SaveIcon from "@material-ui/icons/Save";
 
-const DefaultButton = ({ name, onClick, disabled, show = true }) => {
+const DefaultButton = ({
+  name,
+  onClick,
+  disabled,
+  show = true,
+  size = "small",
+}) => {
   return (
     <div className={show ? "" : "display-none"}>
       <Button
-        size="small"
+        size={size}
         variant="contained"
         color="secondary"
         startIcon={<SaveIcon />}
