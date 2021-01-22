@@ -38,7 +38,10 @@ const FirstDialog = () => {
         <div className="explanation">
           <div className="explanation__inner">
             <div className="explanation__title-wrapper">
-              <h2 className="explanation__title">簡単！２ステップ！</h2>
+              <h2 className="explanation__title">
+                簡単！<span className="explanation__title-blue">２</span>
+                ステップ！
+              </h2>
             </div>
             <figure className="explanation__img-wrapper">
               <img className="explanation__img-1" src={explanation1} alt="" />
@@ -55,7 +58,10 @@ const FirstDialog = () => {
         <div className="explanation">
           <div className="explanation__inner">
             <div className="explanation__title-wrapper">
-              <h2 className="explanation__title">簡単！２ステップ！</h2>
+              <h2 className="explanation__title">
+                簡単！<span className="explanation__title-blue">２</span>
+                ステップ！
+              </h2>
             </div>
             <figure className="explanation__img-wrapper">
               <img className="explanation__img-2" src={explanation2} alt="" />

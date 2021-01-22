@@ -391,6 +391,11 @@ h1 {
   text-align: center;
 }
 
+.explanation__title-blue {
+  color: #0376c6;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 400px) {
   .explanation__title {
     font-size: clamp(12px, 4vw, 16px);
