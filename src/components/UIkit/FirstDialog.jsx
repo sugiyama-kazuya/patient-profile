@@ -41,7 +41,7 @@ const FirstDialog = () => {
               <h2 className="explanation__title">簡単！２ステップ！</h2>
             </div>
             <figure className="explanation__img-wrapper">
-              <img className="explanation__img" src={explanation1} alt="" />
+              <img className="explanation__img-1" src={explanation1} alt="" />
             </figure>
             <div className="explanation__text-1-wrapper">
               <p className="explanation__text">
