@@ -77,12 +77,6 @@ h1 {
   align-items: center;
 }
 
-.img-wrapper:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-
 .profile-img-wrapper {
   text-align: center;
   width: 100%;
