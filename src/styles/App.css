@@ -70,11 +70,17 @@ h1 {
 }
 
 .img-wrapper {
-  width: 25%;
+  width: 23%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.img-wrapper:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 
 .profile-img-wrapper {
