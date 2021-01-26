@@ -1,3 +1,5 @@
+import defaultImg from "../images/default-img.png";
+
 export const initialState = {
   dialog: {
     isOpen: false,
@@ -9,7 +11,7 @@ export const initialState = {
     moon: "",
     day: "",
   },
-  profileImg: `${window.location.origin}/default-img.png`,
+  profileImg: defaultImg,
   diseaseName: "",
   treatmentHistory: "",
   trouble: "",
